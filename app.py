@@ -3,7 +3,7 @@ from PIL import Image
 
 #st.set_page_config(page_title="T.H.E.N.", layout="centered")
 
-col1a, col2a, col3a = st.columns([0.6, 2, 1])
+col1a, col2a, col3a = st.columns([0.75, 2, 1])
 with col2a:
     # Title Logo
     st.image("assets/then_blue_crop.png", width=500)
