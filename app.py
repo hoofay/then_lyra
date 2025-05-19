@@ -130,31 +130,43 @@ st.markdown("""
 tab1, tab2, tab3 = st.tabs(["Home", "Case 1", "Case 2"])
 
 with tab1:
-    st.markdown("""
-    <div style="
-        font-family: 'Shadows Into Light', cursive;
-        color: #333333;
-        background: #fdf6e3;
-        padding: 2rem;
-        border-radius: 12px;
-        box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        text-align: center;
-    ">
-        <img src='assets/then_blue_crop.png' width='500' alt='Title Logo' />
-        <h1>I Spy</h1>
-        <h1>with</h1>
-        <h1>My</h1>
-        <h1>Little</h1>
-        <h1>Eye...</h1>
-        <img src='assets/criminal.png' style='width:50%; margin: 1rem auto;' alt='Magnifying Glass' />
-        <video width="70%" controls>
-            <source src="assets/thenvideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    """, unsafe_allow_html=True)
+    with st.container():
+        st.markdown(
+            """
+            <style>
+            .dossier-container {
+                font-family: 'Shadows Into Light', cursive;
+                color: #333333;
+                background: #fdf6e3;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            </style>
+            """, unsafe_allow_html=True
+        )
+
+        st.markdown('<div class="dossier-container">', unsafe_allow_html=True)
+
+        st.image("assets/then_blue_crop.png", width=500)
+
+        st.markdown("<p class='handwritten' style='font-size:40px; margin: 0;'>I Spy</p>", unsafe_allow_html=True)
+        st.markdown("<p class='handwritten' style='font-size:40px; margin: 0;'>with</p>", unsafe_allow_html=True)
+        st.markdown("<p class='handwritten' style='font-size:40px; margin: 0;'>My</p>", unsafe_allow_html=True)
+        st.markdown("<p class='handwritten' style='font-size:40px; margin: 0;'>Little</p>", unsafe_allow_html=True)
+        st.markdown("<p class='handwritten' style='font-size:40px; margin-bottom: 20px;'>Eye...</p>", unsafe_allow_html=True)
+
+        st.image("assets/criminal.png", use_container_width=True)
+
+        video_file = open('assets/thenvideo.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
+
+        st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 with tab2:
