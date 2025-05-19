@@ -6,7 +6,7 @@ st.markdown("""
 <style>
 /* Add margin above the tabs */
 .css-1q8dd3e e16nr0p30 {  /* This class changes often; better to use attribute selectors or inspect */
-    margin-top: 40px !important;
+    margin-top: 100px !important;
 }
 
 /* More reliable way targeting tabs container by data-testid */
