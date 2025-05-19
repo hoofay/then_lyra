@@ -1,6 +1,21 @@
 import streamlit as st
 from PIL import Image
 
+# add buffer
+st.markdown("""
+<style>
+/* Add margin above the tabs */
+.css-1q8dd3e e16nr0p30 {  /* This class changes often; better to use attribute selectors or inspect */
+    margin-top: 40px !important;
+}
+
+/* More reliable way targeting tabs container by data-testid */
+div[data-testid="stHorizontalBlock"] {
+    margin-top: 40px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # style CSS
 st.markdown("""
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
