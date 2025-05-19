@@ -134,9 +134,9 @@ tab1, tab2, tab3 = st.tabs(["Home", "Case 1", "Case 2"])
 
 with tab1:
     
-    # col1a, col2a, col3a = st.columns([0.75, 2, 1])
-    # with col2a:
-        # st.image("assets/then_blue_crop.png", width=500)
+    col1a, col2a, col3a = st.columns([0.75, 2, 1])
+    with col2a:
+        st.image("assets/then.png", width=500)
 
     # col1b, col2b, col3b = st.columns([0.75, 2, 1])
     # with col2b:
