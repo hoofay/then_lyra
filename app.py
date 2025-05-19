@@ -141,7 +141,45 @@ with tab1:
         st.video(video_bytes)
 
 with tab2:
-    st.write("Case 1")
+    st.markdown("""
+        <div style="font-family: 'Shadows Into Light', cursive; color: #333333; background: #fdf6e3; padding: 2rem; border-radius: 12px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1);">
+            <h2 style="text-align:center;">🕵️‍♂️ Case File: The Missing Cardigan</h2>
+            <p><strong>DATE:</strong> May 19, 2025</p>
+            <p><strong>LOCATION:</strong> Lincoln Elementary School</p>
+            <p><strong>DETECTIVE:</strong> You (aka The Little Eye)</p>
+            <hr>
+            <h4>Summary:</h4>
+            <p>A beloved cardigan belonging to Emily has mysteriously vanished from the classroom cloakroom during recess. The school is abuzz with whispers and suspicion. Can you find the missing sweater before the day ends?</p>
+            <h4>Victim:</h4>
+            <p>Emily's favorite soft, light blue cardigan with pearl buttons.</p>
+            <h4>Suspects:</h4>
+            <ul>
+                <li><strong>Tommy:</strong> Known for borrowing classmates' things without asking.</li>
+                <li><strong>Sarah:</strong> Loves fashion and might want a new look.</li>
+                <li><strong>Jake:</strong> Was seen near the cloakroom right before recess.</li>
+            </ul>
+            <h4>Clues:</h4>
+            <ol>
+                <li>The cardigan was last seen hanging on the third hook from the left.</li>
+                <li>A faint trace of blue thread was found near the art supplies.</li>
+                <li>Tommy’s locker was found unlocked.</li>
+                <li>Sarah was spotted wearing a new cardigan after recess.</li>
+                <li>Jake claims he was helping the teacher organize books.</li>
+            </ol>
+            <h4>Investigation Steps:</h4>
+            <ul>
+                <li>Interview suspects carefully.</li>
+                <li>Check for any blue fibers on clothing.</li>
+                <li>Search lockers and backpacks.</li>
+                <li>Review classroom surveillance (if available).</li>
+            </ul>
+            <h4>Goal:</h4>
+            <p>Use your little eye and detective skills to solve this cozy mystery!</p>
+            <hr>
+            <p style="font-style: italic;">Remember: every detail matters. Good luck, Detective!</p>
+        </div>
+        """, unsafe_allow_html=True)
+
 
 with tab3:
     st.write("Case 2")
