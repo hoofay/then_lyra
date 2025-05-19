@@ -1,6 +1,36 @@
 import streamlit as st
 from PIL import Image
 
+# inject paper tab CSS
+st.markdown("""
+    <style>
+    .stTabs [data-baseweb="tab-list"] {
+        background-color: #fdf6e3;
+        border-bottom: 3px solid #ccc;
+        padding-left: 1rem;
+    }
+    .stTabs [data-baseweb="tab"] {
+        background-color: #f5deb3;
+        color: black;
+        padding: 0.75rem 1.5rem;
+        margin-right: 0.5rem;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border: 1px solid #ccc;
+        border-bottom: none;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #ffffff;
+        color: black;
+        border-bottom: none;
+        position: relative;
+        top: 2px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 tab1, tab2, tab3 = st.tabs(["Home", "Case 1", "Case 2"])
 
 with tab1:
