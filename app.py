@@ -3,6 +3,8 @@ from PIL import Image
 
 # style CSS
 st.markdown("""
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
     <style>
     /* Background everywhere */
     html, body, [data-testid="stApp"], [data-testid="stAppViewContainer"], .main, .block-container {
@@ -72,6 +74,42 @@ st.markdown("""
         border: 1px solid #aaa;
         border-radius: 8px;
     }
+
+    /* Handwritten font for large headings */
+    .handwritten {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 40px;
+        text-align: center;
+        color: #333333;
+    }
+
+    /* Torn edge effect on top of main area */
+    [data-testid="stAppViewContainer"] > .main::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 50px;
+        background: url('https://www.transparenttextures.com/patterns/rip-paper.png') repeat-x;
+        background-size: contain;
+        margin-bottom: -30px;
+        z-index: 10;
+        position: relative;
+    }
+    
+    /* Optional: torn bottom as well */
+    [data-testid="stAppViewContainer"] > .main::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 50px;
+        background: url('https://www.transparenttextures.com/patterns/rip-paper.png') repeat-x;
+        background-size: contain;
+        margin-top: -20px;
+        z-index: 10;
+        position: relative;
+        transform: rotate(180deg);
+    }
+    
     </style>
 """, unsafe_allow_html=True)
 
@@ -86,7 +124,7 @@ with tab1:
 
     col1b, col2b, col3b = st.columns([0.75, 2, 1])
     with col2b:
-        st.markdown("<p style='font-size:40px; text-align: center;'>I Spy</p>", unsafe_allow_html=True)
+        st.markdown("<p class='handwritten'; style='font-size:40px; text-align: center;>I Spy</p>", unsafe_allow_html=True)
         st.markdown("<p style='font-size:40px; text-align: center;'>with</p>", unsafe_allow_html=True)
         st.markdown("<p style='font-size:40px; text-align: center;'>My</p>", unsafe_allow_html=True)
         st.markdown("<p style='font-size:40px; text-align: center;'>Little</p>", unsafe_allow_html=True)
