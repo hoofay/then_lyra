@@ -6,7 +6,7 @@ st.markdown("""
 <style>
 /* More reliable way targeting tabs container by data-testid */
 div[data-testid="stHorizontalBlock"] {
-    margin-top: 80px !important;
+    margin-top: 200px !important;
 }
 </style>
 """, unsafe_allow_html=True)
