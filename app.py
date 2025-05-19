@@ -28,6 +28,34 @@ st.markdown("""
         position: relative;
         top: 2px;
     }
+    /* Background for the main app */
+    body {
+        background-color: #fdf6e3; /* light paper tone */
+    }
+    
+    /* Streamlit main block (where content is rendered) */
+    [data-testid="stAppViewContainer"] > .main {
+        background-color: #fdf6e3;  /* same light paper color */
+        padding: 2rem;
+    }
+    
+    /* Optional: Remove padding between sidebar and main */
+    [data-testid="stSidebar"] {
+        background-color: #fdf6e3;
+    }
+    
+    /* Optional: Remove gray box shadows */
+    section.main > div {
+        box-shadow: none !important;
+    }
+    
+    /* Remove extra padding and center it better */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     </style>
 """, unsafe_allow_html=True)
 
