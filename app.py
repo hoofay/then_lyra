@@ -199,4 +199,44 @@ with tab2:
 
 
 with tab3:
-    st.write("Case 2")
+    st.markdown("""
+    <div style="
+        font-family: 'Shadows Into Light', cursive;
+        color: #333333;
+        background: #fdf6e3;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    ">
+        <h2 style="text-align: center;">🦎 Case File #002: The Case of the Angry Class Pet</h2>
+        <p><strong>Location:</strong> Year 3 Classroom, Room 12B</p>
+        <p><strong>Date:</strong> Thursday Morning</p>
+        <p><strong>Reporting Officer:</strong> Detective Dotty</p>
+        <hr style="margin: 1rem 0;" />
+        <p><strong>Summary:</strong></p>
+        <p>The class pet — a usually calm and contented bearded dragon named Ziggy — was found in an extremely agitated state after morning recess. Witnesses report hissing, tail-whipping, and aggressive glass tapping.</p>
+        <p><strong>Suspected Cause:</strong> Possible unauthorized handling or environmental disturbance.</p>
+        <p><strong>Clues:</strong></p>
+        <ul>
+            <li>An overturned water dish inside the terrarium</li>
+            <li>A trail of lettuce leaves from the habitat to Leo's desk</li>
+            <li>Missing 'Quiet Time' sign from the tank</li>
+            <li>Finger smudges on the inside glass</li>
+        </ul>
+        <p><strong>Interviews:</strong></p>
+        <ul>
+            <li><em>Leo:</em> Claims he only "checked if Ziggy wanted to play chase".</li>
+            <li><em>Ms. Barker:</em> Noticed Ziggy's heating lamp was unplugged.</li>
+            <li><em>Amira:</em> Said she saw Leo giggling at the terrarium before recess ended.</li>
+        </ul>
+        <p><strong>Next Steps:</strong></p>
+        <ol>
+            <li>Review classroom CCTV (if available)</li>
+            <li>Check lamp cord and outlet location</li>
+            <li>Assign Ziggy some calm enrichment activities</li>
+        </ol>
+        <p><strong>Status:</strong> 🕵️‍♀️ Under investigation. Leo placed on "observe only" pet duty.</p>
+    </div>
+    """, unsafe_allow_html=True)
