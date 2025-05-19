@@ -118,6 +118,8 @@ st.markdown("""
 tab1, tab2, tab3 = st.tabs(["Home", "Case 1", "Case 2"])
 
 with tab1:
+    st.markdown('<div class="dossier-container">', unsafe_allow_html=True)
+    
     col1a, col2a, col3a = st.columns([0.75, 2, 1])
     with col2a:
         st.image("assets/then_blue_crop.png", width=500)
@@ -139,6 +141,8 @@ with tab1:
         video_file = open('assets/thenvideo.mp4', 'rb')
         video_bytes = video_file.read()
         st.video(video_bytes)
+
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with tab2:
     st.markdown("""
