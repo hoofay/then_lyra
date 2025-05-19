@@ -140,7 +140,7 @@ with tab1:
 
     col1b, col2b, col3b = st.columns([0.75, 2, 1])
     with col2b:
-        st.markdown("<p class='handwritten'; style='font-size:40px; text-align: center;>I Spy</p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-size:40px; text-align: center;'>I Spy</p>", unsafe_allow_html=True)
         st.markdown("<p style='font-size:40px; text-align: center;'>with</p>", unsafe_allow_html=True)
         st.markdown("<p style='font-size:40px; text-align: center;'>My</p>", unsafe_allow_html=True)
         st.markdown("<p style='font-size:40px; text-align: center;'>Little</p>", unsafe_allow_html=True)
