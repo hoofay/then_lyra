@@ -134,21 +134,21 @@ tab1, tab2, tab3 = st.tabs(["Home", "Case 1", "Case 2"])
 
 with tab1:
     
-    col1a, col2a, col3a = st.columns([0.75, 2, 1])
-    with col2a:
-        #st.image("assets/then_blue_crop.png", width=500)
+    # col1a, col2a, col3a = st.columns([0.75, 2, 1])
+    # with col2a:
+        # st.image("assets/then_blue_crop.png", width=500)
 
-    col1b, col2b, col3b = st.columns([0.75, 2, 1])
-    with col2b:
-        #st.markdown("<p style='font-size:40px; text-align: center;'>I Spy</p>", unsafe_allow_html=True)
-        #st.markdown("<p style='font-size:40px; text-align: center;'>with</p>", unsafe_allow_html=True)
-        #st.markdown("<p style='font-size:40px; text-align: center;'>My</p>", unsafe_allow_html=True)
-        #st.markdown("<p style='font-size:40px; text-align: center;'>Little</p>", unsafe_allow_html=True)
-        #st.markdown("<p style='font-size:40px; text-align: center;'>Eye...</p>", unsafe_allow_html=True)
+    # col1b, col2b, col3b = st.columns([0.75, 2, 1])
+    # with col2b:
+        # st.markdown("<p style='font-size:40px; text-align: center;'>I Spy</p>", unsafe_allow_html=True)
+        # st.markdown("<p style='font-size:40px; text-align: center;'>with</p>", unsafe_allow_html=True)
+        # st.markdown("<p style='font-size:40px; text-align: center;'>My</p>", unsafe_allow_html=True)
+        # st.markdown("<p style='font-size:40px; text-align: center;'>Little</p>", unsafe_allow_html=True)
+        # st.markdown("<p style='font-size:40px; text-align: center;'>Eye...</p>", unsafe_allow_html=True)
 
-    col1c, col2c, col3c = st.columns([1, 2, 1])
-    with col2c:
-        #st.image("assets/criminal.png", use_container_width=True)
+    # col1c, col2c, col3c = st.columns([1, 2, 1])
+    # with col2c:
+        # st.image("assets/criminal.png", use_container_width=True)
 
     col1d, col2d, col3d = st.columns([1, 2, 1])
     with col2d:
