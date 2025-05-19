@@ -4,48 +4,32 @@ from PIL import Image
 # style CSS
 st.markdown("""
     <style>
-    /* Force background on full app including root, body, and containers */
-    html, body, [data-testid="stApp"], [data-testid="stAppViewContainer"] {
+    /* Background everywhere */
+    html, body, [data-testid="stApp"], [data-testid="stAppViewContainer"], .main, .block-container {
         background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
         background-color: #fdf6e3;
         background-repeat: repeat;
         background-attachment: fixed;
+        color: #333333; /* pencil grey */
     }
 
-    /* Main app content */
-    [data-testid="stAppViewContainer"] > .main {
-        background-color: transparent;
-        padding: 2rem;
+    /* Override ALL text to pencil-grey */
+    html, body, div, h1, h2, h3, h4, h5, h6, p, span, li, label {
+        color: #333333 !important;
     }
 
-    /* Sidebar */
-    [data-testid="stSidebar"] {
-        background-color: #fdf6e3;
-    }
-
-    /* Remove shadows */
-    section.main > div {
-        box-shadow: none !important;
-    }
-
-    .block-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    /* Tab bar */
+    /* Tabs wrapper */
     .stTabs [data-baseweb="tab-list"] {
         background-color: #fdf6e3;
         border-bottom: 3px solid #ccc;
         padding-left: 1rem;
+        margin-top: -40px;  /* pull tabs up to hide top strip */
     }
 
-    /* Tabs styled like folder dividers */
+    /* Individual tabs styled like folder dividers */
     .stTabs [data-baseweb="tab"] {
         background-color: #f5deb3;
-        color: black;
+        color: #333333 !important;
         padding: 0.75rem 1.5rem;
         margin-right: -0.5rem;
         border-top-left-radius: 12px;
@@ -59,11 +43,34 @@ st.markdown("""
         z-index: 1;
     }
 
-    /* Overlapping effect for active tab */
+    /* Active tab pops forward */
     .stTabs [aria-selected="true"] {
         background-color: #ffffff;
         z-index: 2;
         top: 2px;
+    }
+
+    /* Clean container padding */
+    .block-container {
+        padding: 2rem;
+    }
+
+    /* Sidebar matching */
+    [data-testid="stSidebar"] {
+        background-color: #fdf6e3;
+        color: #333333;
+    }
+
+    /* Remove Streamlit's default header spacing/padding */
+    header[data-testid="stHeader"] {
+        background: none;
+        height: 0;
+    }
+
+    /* Clean up video border if needed */
+    video {
+        border: 1px solid #aaa;
+        border-radius: 8px;
     }
     </style>
 """, unsafe_allow_html=True)
