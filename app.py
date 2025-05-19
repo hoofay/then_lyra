@@ -210,7 +210,7 @@ with tab3:
         margin-top: 1rem;
         margin-bottom: 1rem;
     ">
-        <h2 style="text-align: center;">🦎 Case File #002: The Case of the Angry Class Pet</h2>
+        <h2 style="text-align: center;">🦎 Case File: The Angry Class Pet</h2>
         <p><strong>Location:</strong> Year 3 Classroom, Room 12B</p>
         <p><strong>Date:</strong> Thursday Morning</p>
         <p><strong>Reporting Officer:</strong> Detective Dotty</p>
