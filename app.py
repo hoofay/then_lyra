@@ -25,29 +25,29 @@ with col2c:
     st.image("assets/criminal.png",use_container_width=True)
 
 
-st.markdown("""
-    <style>
-    .rainbow-subheader {
-        font-size: 24px;
-        font-weight: 600;
-        position: relative;
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-    .rainbow-subheader::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 100%;
-        height: 5px;
-        background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-        border-radius: 2px;
-    }
-    </style>
+# st.markdown("""
+#     <style>
+#     .rainbow-subheader {
+#         font-size: 24px;
+#         font-weight: 600;
+#         position: relative;
+#         display: inline-block;
+#         margin-bottom: 20px;
+#     }
+#     .rainbow-subheader::after {
+#         content: "";
+#         position: absolute;
+#         left: 0;
+#         bottom: -5px;
+#         width: 100%;
+#         height: 5px;
+#         background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+#         border-radius: 2px;
+#     }
+#     </style>
 
-    <div class="rainbow-subheader">🔍 About Us 🔍</div>
-""", unsafe_allow_html=True)
+#     <div class="rainbow-subheader">🔍 About Us 🔍</div>
+# """, unsafe_allow_html=True)
 
 # path to video file
 video_file = open('assets/thenvideo.mp4', 'rb')
