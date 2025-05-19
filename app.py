@@ -1,15 +1,8 @@
 import streamlit as st
 from PIL import Image
 
-# add buffer
-st.markdown("""
-<style>
-/* More reliable way targeting tabs container by data-testid */
-div[data-testid="stHorizontalBlock"] {
-    margin-top: 200px !important;
-}
-</style>
-""", unsafe_allow_html=True)
+# Add vertical space above the tabs using custom HTML
+st.markdown("<div style='height: 100px;'></div>", unsafe_allow_html=True)
 
 # style CSS
 st.markdown("""
